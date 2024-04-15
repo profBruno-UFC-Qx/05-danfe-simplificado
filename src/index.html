@@ -1,12 +1,121 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DANFE NFC-e</title>
   <link rel="stylesheet" href="css/estilo.css">
-  <title>Questão</title>
 </head>
+
 <body>
+
+  <header>
+    <img src="caminho/para/o/seu/logotipo.png" alt="Logotipo da Empresa">
+    <h1>LINKO COMERCIAL</h1>
+    <p>00.000.000/0000-00 | 000/0000000</p>
+    <p>ENDEREÇO | BAIRRO | MUNICÍPIO | UF</p>
+  </header>
+
+  <main>
+    <h2>DANFE NFC-e – Documento Auxiliar da Nota Fiscal</h2>
+    <h2>Eletrônica para Consumidor Final</h2>
+    <p>Não permite aproveitamento de crédito de ICMS</p>
+    <p>EMISSÃO NORMAL</p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Código</th>
+          <th>Descrição</th>
+          <th>Quantidade</th>
+          <th>Unidade</th>
+          <th>Valor Unitário</th>
+          <th>Valor Desconto</th>
+          <th>Valor Total</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>2</td>
+          <td>NOTA FISCAL EMITIDA EM AMBIENTE DE HOMOLOGADO - SEM VALOR FISCAL</td>
+          <td>1</td>
+          <td>uni</td>
+          <td>R$ 2,0000</td>
+          <td>R$ 0,16</td>
+          <td>R$ 2,00</td>
+
+        <tr>
+          <td>3</td>
+          <td>FARINHA DE TRIGO</td>
+          <td>1</td>
+          <td>uni</td>
+          <td>R$ 3,0000</td>
+          <td>R$ 0,24</td>
+          <td>R$ 3,00</td>
+
+        <tr>
+          <td>4</td>
+          <td>PÃO DE QUEIJO</td>
+          <td>1</td>
+          <td>uni</td>
+          <td>R$ 4,0000</td>
+          <td>R$ 0,32</td>
+          <td>R$ 4,00</td>
+
+        <tr>
+          <td>5</td>
+          <td>AGUA MINERAL COM GÁS</td>
+          <td>1</td>
+          <td>uni</td>
+          <td>R$ 5,0000</td>
+          <td>R$ 0,40</td>
+          <td>R$ 5,00</td>
+
+        <tr>
+          <td>6</td>
+          <td>MOCHILA PARA NOTEBOOK</td>
+          <td>1</td>
+          <td>uni</td>
+          <td>R$ 6,0000</td>
+          <td>R$ 0,48</td>
+          <td>R$ 6,00</td>
+
+        <tr>
+          <td>7</td>
+          <td>GAFARRA TÉRMICA 1.8 LTS</td>
+          <td>1</td>
+          <td>uni</td>
+          <td>R$ 7,0000</td>
+          <td>R$ 0,56</td>
+          <td>R$ 7,00</td>
+
+        <tr>
+          <td>1</td>
+          <td>RAÇÃO PARA CACHORRO</td>
+          <td>1</td>
+          <td>uni</td>
+          <td>R$ 1,0000</td>
+          <td>R$ 0,08</td>
+          <td>R$ 1,00</td>
+      </tbody>
+    </table>
+  </main>
+
+  <div id="valores-totais">
+    <p>Quantidade Total de Itens: <span id="quantidade-itens">7</span></p>
+    <p>Valor Total do Desconto: <span id="valor-desconto">R$ 2,24</span></p>
+    <p>Valor Total Líquido: <span id="valor-total">R$ 25,76</span></p>
+  </div>
+
+  <div id="formas-pagamento">
+    <p>Forma de Pagamento: Valor Pago</p>
+    <p><span id="forma-pagamento-cartão">Cartão de Crédito: R$ 20,00</span></p>
+    <p><span id="forma-pagamento-dinheiro">Dinheiro: R$ 10,00</span></p>
+    <p>Troco: <span id="troco">R$ 4,24</span></p>
+  </div>
+
   <script src="js/script.js"></script>
 </body>
+
 </html>

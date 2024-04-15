@@ -14,11 +14,11 @@ jobs:
     steps:
     - name: Checkout code
       uses: actions/checkout@v4
-    - name: Boas praticas em HMTL
-      id: boas-praticas-em-hmtl
+    - name: Boas praticas em HTML
+      id: boas-praticas-em-html
       uses: education/autograding-command-grader@v1
       with:
-        test-name: Boas praticas em HMTL
+        test-name: Boas praticas em HTML
         setup-command: npm install
         command: npx linthtml 'src/**/*.html'
         timeout: 10
@@ -33,7 +33,7 @@ jobs:
     - name: Autograding Reporter
       uses: education/autograding-grading-reporter@v1
       env:
-        BOAS-PRATICAS-EM-HMTL_RESULTS: "${{steps.boas-praticas-em-hmtl.outputs.result}}"
+        BOAS-PRATICAS-EM-HTML_RESULTS: "${{steps.boas-praticas-em-html.outputs.result}}"
         BOAS-PRATICAS-CSS_RESULTS: "${{steps.boas-praticas-css.outputs.result}}"
       with:
-        runners: boas-praticas-em-hmtl,boas-praticas-css
+        runners: boas-praticas-em-html,boas-praticas-css
